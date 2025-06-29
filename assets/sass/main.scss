@@ -848,4 +848,57 @@
 				}
 			}
 		}
+
+		@include breakpoint('<=small') {
+  #wrapper {
+    padding: 0.5em 0 !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  #main {
+    padding: 0 0.2em !important;
+    box-shadow: none !important;
+  }
+  .panel.intro {
+    flex-direction: column !important;
+    height: auto !important;
+    align-items: stretch !important;
+  }
+  .panel.intro .pic {
+    width: 100% !important;
+    height: 14em !important;
+    margin-bottom: 1em;
+  }
+  .panel.intro header {
+    padding: 1.5em 0.5em !important;
+    text-align: center !important;
+  }
+  .panel.intro header h1 {
+    font-size: 1.3em !important;
+  }
+  .panel.intro header h2 {
+    font-size: 1em !important;
+  }
+  .panel.intro header p {
+    font-size: 0.95em !important;
+  }
+  .panel.intro .pic img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  /* Make project and experience sections stack nicely */
+  #work > div,
+  #project > div {
+    flex-direction: column !important;
+    gap: 1em !important;
+    align-items: center !important;
+  }
+  #work img,
+  #project img {
+    width: 90vw !important;
+    max-width: 220px !important;
+    height: auto !important;
+  }
+}
 	}
