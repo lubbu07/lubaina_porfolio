@@ -788,6 +788,17 @@
 				@include breakpoint('<=small') {
 					.pic {
 						height: 20em;
+						width: 140px !important;
+						margin: 0 auto 1em auto !important;
+						display: block !important;
+					}
+
+					.pic img {
+						width: 100% !important;
+						height: 100% !important;
+						object-fit: cover !important;
+						object-position: top center !important;
+						border-radius: 50%;
 					}
 
 					header {
